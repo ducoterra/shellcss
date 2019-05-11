@@ -1,0 +1,105 @@
+html, body, .master-container, .nav-container, .body-container {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.master-container {
+    display: flex;
+}
+
+.side-nav-container {
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .2s all;
+    -webkit-transition: .2s all;
+    -moz-transition: .2s all;
+}
+
+.body-container {
+    /* This covers the side-nav icons */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-nav-container {
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    z-index: 1;
+}
+
+.body-content-container {
+    background-color: white;
+    flex-grow: 1;
+    overflow: auto;
+    z-index: 1;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.nav-item a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.nav-item .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    font-size: 1rem;
+    background-color: inherit;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    left: 110%;
+    z-index: 2;
+}
+
+.nav-item:hover .tooltiptext {
+    visibility: visible;
+}
+
+.nav-item:hover {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.grow {
+    transition: .2s all;
+    -webkit-transition: .2s all;
+    -moz-transition: .2s all;
+}
+
+.grow:hover {
+    font-size: 2.5rem;
+}
+
+.top {
+    height: 100%;
+    width: 50px;
+}
+
+.side {
+    height: 50px;
+    width: 100%;
+}

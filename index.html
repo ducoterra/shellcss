@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basics -->
+
+    <meta charset="utf-8">
+    <title>Shell CSS</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="shell.css">
+
+</head>
+
+<body>
+    <!-- master-container has height 100% and no padding/margin -->
+    <div class="master-container">
+        <!-- Side nav takes up the right 50px of the screen -->
+        <div id="side-nav" class="side-nav-container" style="background-color: lightgray;">
+            <!-- A nav item is just a 50px x 50px block for storing links -->
+            <div class="nav-item" style="background-color: black;">
+            </div>
+            <!-- Add grow to a nav-item to make it grow when hovered over -->
+            <div class="side nav-item grow">
+                <a href="">
+                    <i class="fas fa-home"></i>
+                </a>
+                <!-- Add a span "tooltiptext" to make a tooltip appear on the right side -->
+                <span class="tooltiptext">I grow!</span>
+            </div>
+            <div class="side nav-item">
+                <a href="">
+                    <i class="fas fa-search"></i>
+                    <span class="tooltiptext">I don't!</span>
+                </a>
+            </div>
+        </div>
+        <!-- everything for the body goes in here -->
+        <div class="body-container">
+            <!-- This is a top navbar, similar to the side navbar -->
+            <div class="body-nav-container" style = "background-color: darkgray;">
+                <!-- This uses the data-target to identify a collapsable item -->
+                <!-- "Collapsing" an item sets its width to 0px -->
+                <a data-target="side-nav" class="collapse top nav-item">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            <!-- This is where body stuff goes. Put everything else here -->
+            <div class="body-content-container">
+                <div style="margin: 10px;">
+                    <h1>Hello Shell!</h1>
+                    <h2>This is a body.</h2>
+                    <p>My very interesting life story begins at the dawn of time...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="shell.js"></script>
+</body>
+
+</html>
