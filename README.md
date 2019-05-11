@@ -1,6 +1,8 @@
 # Welcome to Shell CSS
 ## A crispy shell for your beautiful website.
 
+![example gif](example.gif)
+
 ### How to use:
 1. Clone this repo
 2. Open index.html
